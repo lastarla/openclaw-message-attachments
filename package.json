@@ -1,6 +1,6 @@
 {
   "name": "@angli/openclaw-message-attachments",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "OpenClaw plugin for downloading message attachments to local files.",
   "license": "MIT",
