@@ -3,6 +3,30 @@
   "version": "0.1.0",
   "type": "module",
   "description": "OpenClaw plugin for downloading message attachments to local files.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lastarla/openclaw-message-attachments.git"
+  },
+  "homepage": "https://github.com/lastarla/openclaw-message-attachments",
+  "bugs": {
+    "url": "https://github.com/lastarla/openclaw-message-attachments/issues"
+  },
+  "keywords": [
+    "openclaw",
+    "plugin",
+    "feishu",
+    "attachments"
+  ],
+  "files": [
+    "index.ts",
+    "src",
+    "openclaw.plugin.json",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "openclaw": {
     "extensions": ["./index.ts"]
   },
