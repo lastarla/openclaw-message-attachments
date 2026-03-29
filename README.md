@@ -31,6 +31,48 @@
 - 文件内容解析
 - 飞书之外的平台
 
+## 安装
+
+### 1. 安装插件
+OpenClaw 插件安装命令不支持直接使用 GitHub URL。
+
+如果这个插件已经发布到 npm，可以直接安装包名：
+
+```bash
+openclaw plugins install @lastarla/openclaw-message-attachments
+```
+
+如果还没有发布到 npm，请先 clone 仓库，再从本地目录安装：
+
+```bash
+git clone https://github.com/lastarla/openclaw-message-attachments.git
+openclaw plugins install ./openclaw-message-attachments
+```
+
+如果你在本地开发，也可以使用：
+
+```bash
+openclaw plugins install --link ./openclaw-message-attachments
+```
+
+### 2. 在 `openclaw.json` 中启用插件
+如果安装后还没启用，可以确认 `openclaw.json` 中存在：
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "@lastarla/openclaw-message-attachments": {
+        "enabled": true
+      }
+    }
+  }
+}
+```
+
+### 3. 配置 Feishu 凭证
+安装并启用后，再继续配置插件参数。
+
 ## 使用前需要准备
 
 ### OpenClaw
