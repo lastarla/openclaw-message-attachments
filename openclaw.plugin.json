@@ -1,0 +1,43 @@
+{
+  "id": "@lastarla/openclaw-message-attachments",
+  "name": "openclaw-message-attachments",
+  "version": "0.1.0",
+  "description": "Download message attachments to local files for downstream tools.",
+  "entry": "./index.ts",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "sources": {
+        "type": "object",
+        "properties": {
+          "feishu": {
+            "type": "object",
+            "properties": {
+              "appToken": {
+                "type": "string",
+                "description": "Feishu app token used for attachment downloads."
+              },
+              "openApiBase": {
+                "type": "string",
+                "description": "Override Feishu Open API base URL."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": true
+      },
+      "download": {
+        "type": "object",
+        "properties": {
+          "maxBytes": {
+            "type": "number",
+            "description": "Maximum attachment size in bytes."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "additionalProperties": false
+  }
+}
