@@ -39,7 +39,7 @@ OpenClaw 插件安装命令不支持直接使用 GitHub URL。
 如果这个插件已经发布到 npm，可以直接安装包名：
 
 ```bash
-openclaw plugins install @lastarla/openclaw-message-attachments
+openclaw plugins install @angli/openclaw-message-attachments
 ```
 
 如果还没有发布到 npm，请先 clone 仓库，再从本地目录安装：
@@ -62,7 +62,7 @@ openclaw plugins install --link ./openclaw-message-attachments
 {
   "plugins": {
     "entries": {
-      "@lastarla/openclaw-message-attachments": {
+      "@angli/openclaw-message-attachments": {
         "enabled": true
       }
     }
@@ -84,7 +84,7 @@ openclaw plugins install --link ./openclaw-message-attachments
 插件配置挂在：
 
 ```text
-plugins.entries.@lastarla/openclaw-message-attachments.config
+plugins.entries.@angli/openclaw-message-attachments.config
 ```
 
 最小 `openclaw.json` 示例：
@@ -93,7 +93,7 @@ plugins.entries.@lastarla/openclaw-message-attachments.config
 {
   "plugins": {
     "entries": {
-      "@lastarla/openclaw-message-attachments": {
+      "@angli/openclaw-message-attachments": {
         "enabled": true,
         "config": {
           "sources": {
@@ -114,7 +114,7 @@ plugins.entries.@lastarla/openclaw-message-attachments.config
 {
   "plugins": {
     "entries": {
-      "@lastarla/openclaw-message-attachments": {
+      "@angli/openclaw-message-attachments": {
         "enabled": true,
         "config": {
           "sources": {

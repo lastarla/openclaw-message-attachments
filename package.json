@@ -1,5 +1,5 @@
 {
-  "name": "@lastarla/openclaw-message-attachments",
+  "name": "@angli/openclaw-message-attachments",
   "version": "0.1.0",
   "type": "module",
   "description": "OpenClaw plugin for downloading message attachments to local files.",
@@ -28,7 +28,9 @@
     "access": "public"
   },
   "openclaw": {
-    "extensions": ["./index.ts"]
+    "extensions": [
+      "./index.ts"
+    ]
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

@@ -30,7 +30,7 @@ test('plugin register(api) uses plugin-scoped config and registers tool', async 
       config: {
         plugins: {
           entries: {
-            '@lastarla/openclaw-message-attachments': {
+            '@angli/openclaw-message-attachments': {
               enabled: true,
               config: {
                 sources: {

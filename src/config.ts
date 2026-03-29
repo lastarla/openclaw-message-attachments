@@ -1,4 +1,4 @@
-export const OPENCLAW_PLUGIN_ID = '@lastarla/openclaw-message-attachments'
+export const OPENCLAW_PLUGIN_ID = '@angli/openclaw-message-attachments'
 
 export type PluginConfig = {
   sources?: {

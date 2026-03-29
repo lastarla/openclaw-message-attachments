@@ -26,7 +26,10 @@ export const plugin = {
       throw new Error('OpenClaw plugin API does not expose registerTool.')
     }
 
-    registerOpenClawMessageAttachmentDownloadTool(api as Required<Pick<OpenClawPluginApi, 'registerTool'>>, getRuntimeConfigFromApiConfig(api.config))
+    registerOpenClawMessageAttachmentDownloadTool(
+      api as Required<Pick<OpenClawPluginApi, 'registerTool'>>,
+      getRuntimeConfigFromApiConfig(api.config),
+    )
   },
 }
 
@@ -36,7 +39,7 @@ function isExecutedDirectly(): boolean {
   return Boolean(process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url)
 }
 
-if (isExecutedDirectly()) {
+async function main(): Promise<void> {
   const server = new McpServer({
     name: 'openclaw-message-attachments',
     version: '0.1.0',
@@ -49,4 +52,11 @@ if (isExecutedDirectly()) {
 
   const transport = new StdioServerTransport()
   await server.connect(transport)
+}
+
+if (isExecutedDirectly()) {
+  main().catch((error) => {
+    console.error(error)
+    process.exit(1)
+  })
 }
