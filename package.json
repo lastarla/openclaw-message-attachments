@@ -1,7 +1,6 @@
 {
   "name": "@lastarla/openclaw-message-attachments",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "OpenClaw plugin for downloading message attachments to local files.",
   "openclaw": {
