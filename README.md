@@ -134,7 +134,7 @@ plugins.entries.@angli/openclaw-message-attachments.config
 ```
 
 其中：
-- `sources.feishu.appToken`：飞书应用访问令牌，用于下载附件
+- `sources.feishu.appToken`：用于请求飞书 Open API 的访问令牌。这里应填写可直接用于 API 请求的 access token，不是 App ID，也不是 App Secret
 - `sources.feishu.openApiBase`：可选，自定义飞书 Open API 地址
 - `download.maxBytes`：可选，最大附件大小限制，默认 20MB
 
